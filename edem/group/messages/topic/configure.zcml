@@ -5,9 +5,9 @@
 
   <!--Post List-->
   <browser:viewlet name="gs-group-messages-topic-list"
-    manager=".interfaces.ITopicPage"
+    manager="gs.group.messages.topic.interfaces.ITopicPage"
     template="browser/templates/postlist.pt"
-    class=".postlist.PostList"
+    class="gs.group.messages.topic.postlist.PostList"
     permission="zope2.View"
     layer="gs.skin.ogn.edem.interfaces.IEDemLayer"
     weight="30"
