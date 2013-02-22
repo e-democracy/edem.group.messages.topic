@@ -1,4 +1,1 @@
-Introduction
-===========
-
-Type a brief description here
+README.rst
