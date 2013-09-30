@@ -1,9 +1,7 @@
 <div class="postList">
   <tal:block repeat="post view/topic">
-    <a name="posta-top" tal:condition="repeat/post/start"></a>
-    <a name="posta-bottom" tal:condition="repeat/post/end"></a>
-    <a name="posta" tal:attributes="
-        name string:posta-${post/post_id}"></a>
+    <span id="post-top" tal:condition="repeat/post/start"></span>
+    <span id="post-bottom" tal:condition="repeat/post/end"></span>
     <p tal:define="position repeat/post/number;
         rptAuth python:view.topic[position-1]['author_id'] == view.topic[position-2]['author_id'];
         showPhoto python:(position==1) or not(rptAuth);
