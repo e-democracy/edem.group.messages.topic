@@ -13,5 +13,12 @@
     weight="30"
     title="Post list" />
 
+  <browser:page 
+    for="Products.XWFMailingListManager.interfaces.IGSMessagesFolder" 
+    name="gstopic" 
+    class=".topic.GSTopicView" 
+    layer="gs.skin.ogn.edem.interfaces.IEDemSkin" 
+    permission="zope2.Public" />
+
 </configure>
 
